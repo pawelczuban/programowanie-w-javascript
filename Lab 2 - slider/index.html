@@ -4,23 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="slider">
-        <div class="slides">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
-        	<img src="http://picsum.photos/seed/picsum/600/400" alt="">
+
+        <div class="slides fade">
+            <img src="./images/1.jpg" alt="Image1">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images/2.jpg" alt="Image2">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images/3.jpg" alt="Image3">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images/4.jpg" alt="Image4">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images/5.jpg" alt="Image5">
+        </div>
+
+        <div class="slides fade">
+            <img src="./images/6.jpg" alt="Image6">
+        </div>
+
+        <div id="first">
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+
+        <div id="second">
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
         </div>
     </div>
+
+    <div style="text-align:center">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
     <main>
     </main>
+
     <script src="main.js"></script>
 </body>
 
