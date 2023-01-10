@@ -1,13 +1,18 @@
 const liczba1 = document.querySelector('#liczba1')
 const liczba2 = document.querySelector('#liczba2')
-const przeliczBtn = document.querySelector('#przelicz')
-const wynikiPojemnik = document.querySelector('#wyniki')
+const liczba3 = document.querySelector('#liczba3')
+const liczba4 = document.querySelector('#liczba4')
 
-console.dir(liczba1)
-console.dir(liczba2)
+const sumaWynik = document.querySelector('#suma')
+const sredniaWynik = document.querySelector('#srednia')
+const minWynik = document.querySelector('#min')
+const maxWynik = document.querySelector('#max')
+
+const przeliczBtn = document.querySelector('#przelicz')
+
 przeliczBtn.addEventListener('click', () => {
-    console.log(Math.min(+liczba1.value,+"4"))
-    wynikiPojemnik.innerHTML = `Wynik: ${parseInt(liczba1.value)+parseInt(liczba2.value)}`
-    //wynikiPojemnik.innerHTML = `Wynik: ${liczba1.value+liczba2.value}`
+    sumaWynik.innerHTML = 'Suma: '+ (parseInt(liczba1.value) + parseInt(liczba2.value) + parseInt(liczba3.value) + parseInt(liczba4.value))
+    sredniaWynik.innerHTML = 'Srednia: ' + (parseInt(liczba1.value) + parseInt(liczba2.value) + parseInt(liczba3.value) + parseInt(liczba4.value))/4
+    minWynik.innerHTML = 'Min: ' + Math.min(parseInt(liczba1.value), parseInt(liczba2.value), parseInt(liczba3.value), parseInt(liczba4.value))
+    maxWynik.innerHTML = 'Max: ' + Math.max(parseInt(liczba1.value), parseInt(liczba2.value), parseInt(liczba3.value), parseInt(liczba4.value))
 })
-// Math.min(), .max()
