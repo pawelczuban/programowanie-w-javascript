@@ -1,0 +1,12 @@
+.visible {
+    display: block;
+}
+
+#soundBlock {
+    display: flex;
+    margin: 70px;
+}
+
+#infoBlock {
+    margin-left: 70px;
+}
